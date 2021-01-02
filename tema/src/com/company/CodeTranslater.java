@@ -2,6 +2,7 @@ package com.company;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Stack;
 
 public class CodeTranslater {
     private String source_code;
@@ -26,13 +27,24 @@ public class CodeTranslater {
      */
     public String translate() throws Exception {
         if (source_code.length() % 4 != 0)
-            throw new Exception("Exception:<0> syntactical problem");
+            throw new Exception("Exception: 0" + " raw code not % 4"); // TODO
+        Stack<Pair> braces = new Stack<>();
 
         StringBuilder translated_code = new StringBuilder();
         for (int i = 0; i < source_code.length(); i+= 4) {
-            String instruction = source_code.substring(i, i + 4);
-            translated_code.append(convertInstruction(instruction));
+            String raw_instruction = source_code.substring(i, i + 4);
+
+            // check for instruction ==> throw exception
+            String instruction = convertInstruction(raw_instruction);
+            translated_code.append(instruction);
+
+            // check for invalid braces ==> throw exception
+            checkForBraces(braces, instruction, i/4);
         }
+        // check to see if all braces were closed
+        if (!braces.isEmpty())
+            throw new Exception("Error: " + source_code.length() / 4 + "  not all braces were closed"); // TODO
+
         return translated_code.toString();
     }
 
@@ -57,8 +69,34 @@ public class CodeTranslater {
         }
         String translation = instructions.getOrDefault(matchingKey, "none");
         if (translation.equals("none"))
-            throw new Exception("incorrct instruction");
+            throw new Exception("invalid instruction");  // TODO
+
+        //System.out.println(instruction + " ---" + matchingKey + "---> " + instructions.get(matchingKey));
         return instructions.get(matchingKey);
+    }
+
+    /**
+     * checks if braces order is correct
+     * @throws Exception if braces are placed incorrect
+     */
+    public void checkForBraces(Stack<Pair> braces, String instruction, Integer index) throws Exception {
+        if (instruction.equals("[")) braces.push(new Pair(1, index));
+        if (instruction.equals("]")) {
+            if (braces.isEmpty()) {
+                throw new Exception("Error:" + index);
+            } else {
+                braces.pop();
+            }
+        }
+    }
+
+    static class Pair {
+        int type;
+        int index;
+        Pair(int type, int index) {
+            this.type = type;
+            this.index = index;
+        }
     }
 
 }
