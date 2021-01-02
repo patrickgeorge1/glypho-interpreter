@@ -3,3 +3,6 @@ build:
 
 run: build
 	java com.company.Main $(input) $(base)
+
+clean:
+	rm com/company/*.class
