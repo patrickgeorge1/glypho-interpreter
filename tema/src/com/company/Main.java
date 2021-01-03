@@ -2,6 +2,7 @@ package com.company;
 
 
 public class Main {
+    public static Integer base = 10;
 
     public static void main(String[] args) {
         // check for args
@@ -9,6 +10,8 @@ public class Main {
             System.out.println("  [ERROR]: not enough args");
             System.out.println("  \"make run input=path/to/source/code base=[2..36]?optional\"");
         }
+        if (args.length == 2) base = Integer.parseInt(args[1]);
+        System.out.println("base: " + base);
 
         // read raw source code
         String source_code = "";
@@ -25,6 +28,8 @@ public class Main {
             source_code = ct.translate();
         } catch (Exception e) { System.out.println(e.getMessage()); return; }
         System.out.println(source_code);
+
+        // execute short form code
 
     }
 }

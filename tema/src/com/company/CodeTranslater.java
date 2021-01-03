@@ -4,9 +4,18 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
+/**
+ * This class can trnaslate a sequence of Glypho code into it's short form
+ *
+ * <p> Principal methods :   {@code String translate()}
+ * and <br> {@code String convertInstruction(String glyphoInstruction)}</p>
+ *
+ * @since java 11
+ * @author Patrick Vitoga
+ */
 public class CodeTranslater {
     private String source_code;
-    Map<Integer, String> instructions = new HashMap<>() {{
+    private static final Map<Integer, String> instructions = new HashMap<>() {{
        put(0, "n");  put(1, "i");  put(4, ">");
        put(5, "\\"); put(6, "1");  put(16, "<");
        put(17, "d"); put(18, "+"); put(20, "[");
@@ -52,7 +61,7 @@ public class CodeTranslater {
      * convert 4 chars in corresponding instruction if possible
      * @return short form
      */
-    public String convertInstruction(String instruction) throws Exception {
+    public static String convertInstruction(String instruction) throws Exception {
         HashMap<Character, Integer> positions = new HashMap<>();
         int next_position = 0;
 

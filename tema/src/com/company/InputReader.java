@@ -2,6 +2,13 @@ package com.company;
 
 import java.io.*;
 
+/**
+ * This class is used to read glypho code
+ * from a file.
+ *
+ * @since java 11
+ * @author Patrick Vitoga
+ */
 public class InputReader {
     private final StringBuilder souce_code = new StringBuilder();
     private String file_name = "";
