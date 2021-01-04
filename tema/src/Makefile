@@ -6,3 +6,8 @@ run: build
 
 clean:
 	rm com/company/*.class
+
+sanitaze:
+	rm -rf *.err
+	rm -rf *.rawerr
+	rm -rf *.out

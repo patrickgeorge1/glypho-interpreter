@@ -42,8 +42,7 @@ public class Interpreter {
     }
 
     public int executeInstruction(char instruction, int line) throws Exception {
-        if (skippedBrackets != 0 && (instruction != ']' || instruction != '[')) return line + 1;
-
+        if (skippedBrackets != 0 && (instruction != ']' && instruction != '[')) return line + 1;
 
         switch (instruction) {
             case 'n':
