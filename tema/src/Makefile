@@ -1,9 +1,10 @@
 build:
-	javac com/company/*.java
+	javac -g  com/company/*.java
 
 run: build
 	java com.company.Main $(input) $(base)
 
+.PHONY: clean
 clean:
 	rm com/company/*.class
 

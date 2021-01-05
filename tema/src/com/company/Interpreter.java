@@ -105,12 +105,11 @@ public class Interpreter {
                 break;
 
             case 'e':
-                String next_instruciton = memoryStack.removeLast().toString();
-                next_instruciton += memoryStack.removeLast().toString();
-                next_instruciton += memoryStack.removeLast().toString();
-                next_instruciton += memoryStack.removeLast().toString();
-
-                String command = CodeTranslater.convertInstruction(next_instruciton);
+                BigInteger [] numbers = {
+                        memoryStack.removeLast(), memoryStack.removeLast(),
+                        memoryStack.removeLast(), memoryStack.removeLast()
+                };
+                String command = CodeTranslater.convertInstruction(numbers);
                 line = executeInstruction(command.charAt(0), line);
                 return line;
 

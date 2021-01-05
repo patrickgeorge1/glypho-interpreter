@@ -26,16 +26,20 @@ run_tests (){
             error=${src/.gly/.err}
             retval=`cat ${src/.gly/.ret}`
 
-            OUTPUT_FILE=$test_name.out
+            OUTPUT_FILE=$test_name.rawout
+            CLEARED_OUTPUT=$test_name.out
             ERROR_FILE=$test_name.rawerr
             CLEARED_ERROR=${test_name}.err
 
-            time_pref=`grep ^${test_name} mytime.cfg | cut -d ' ' -f 2`
+            if [ -f mytime.cfg ]
+            then
+                time_pref=`grep ^${test_name} mytime.cfg | cut -d ' ' -f 2`
+            fi
             time=${time_pref:-${time_test}}
             time=`min ${time} ${TIME_LEFT}`
 
             unset base
-            rm $INPUT_FILE $OUTPUT_FILE &> /dev/null
+            rm $INPUT_FILE $OUTPUT_FILE $ERROR_FILE $CLEARED_OUTPUT $CLEARED_ERROR &> /dev/null
             cp ${src} $INPUT_FILE
 
             if [[ $test_name =~ big.* ]]
@@ -74,25 +78,28 @@ run_tests (){
                 echo -e "\e[31mFAILED\e[0m Test \e[1;33m$test_name\e[0m. You failed to win: $weight"
                 echo "make -s run input=${src} base=$base < ${input} > $OUTPUT_FILE 2> $ERROR_FILE" > ${LOG_DIR}/$test_name.command
                 echo "Timeout $DIFF/$time"
+                rm ${OUTPUT_FILE} ${CLEARED_OUTPUT} ${CLEARED_ERROR} ${ERROR_FILE} 2>/dev/null
             else
-                diff -bBq "$OUTPUT_FILE" "${output}" &> /dev/null
+                cat "$OUTPUT_FILE" | grep -vi Makefile > "$CLEARED_OUTPUT"
+                diff -bBq "$CLEARED_OUTPUT" "${output}" &> /dev/null
                 outcmp=$?
 
-                make_error_line=`cat $ERROR_FILE | grep ^make`
+                make_error_line=`cat $ERROR_FILE | sed 's/make.* /\nmake: /' | grep ^make`
                 RETVAL="${make_error_line##* }"
                 RETVAL="${RETVAL:-0}"
 
-                cat $ERROR_FILE | grep -v ^make > ${CLEARED_ERROR}
+                cat $ERROR_FILE | sed 's/make.* /\nmake: /' | grep -v ^make > ${CLEARED_ERROR}
                 diff -bBq "$CLEARED_ERROR" "${error}" &> /dev/null
                 errcmp=$?
 
                 if [ "$outcmp" = "0" ] && [ "$errcmp" = "0" ] && [ "$RETVAL" = "$retval" ]
                 then
                     echo -e "\e[32mPASSED\e[0m Test \e[1;33m$test_name\e[0m. You won: $weight"
-                    score=$[$score + $weight]; rm "${OUTPUT_FILE}" "${ERROR_FILE}" ${CLEARED_ERROR}
+                    rm ${OUTPUT_FILE} ${CLEARED_OUTPUT} ${CLEARED_ERROR} ${ERROR_FILE} 2>/dev/null
+                    score=$[$score + $weight];
                 else
                     echo -e "\e[31mFAILED\e[0m Test $\e[1;33m$test_name\e[0m. You failed to win: $weight"
-                    mv ${OUTPUT_FILE} ${CLEARED_ERROR} ${ERROR_FILE} ${LOG_DIR}
+                    mv ${OUTPUT_FILE} ${CLEARED_OUTPUT} ${CLEARED_ERROR} ${ERROR_FILE} ${LOG_DIR}
                     echo ${RETVAL} > ${LOG_DIR}/${test_name}.ret
                     echo "make -s run input=${src} base=$base < ${input} > $OUTPUT_FILE 2> $ERROR_FILE" > ${LOG_DIR}/$test_name.command
                     echo " failed outputs saved in ${LOG_DIR}"

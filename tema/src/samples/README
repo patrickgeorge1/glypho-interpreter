@@ -8,7 +8,7 @@ mytime.cfg:
 -poate lipsi
 -daca timpul e 0, testul va fi ignorat cu totul
 
-Makefile:
+csamples/Makefile sau jsamples/Makefile:
 -exemplu de Makefile care arata cum trebuie sa arate regula de run
 -numele executabilului si structura sunt doar exemple, nu sunt impuse
 -$(input) este un nume foarte prost ales, de fapt se refera la codul sursa. A ramas asa pentru ca deja s-a publicat enuntul

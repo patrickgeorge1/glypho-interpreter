@@ -1,0 +1,532 @@
+javac com/company/*.java
+Generating tests
+Starting
+[32mPASSED[0m Test [1;33mtest56-ops[0m. You won: 1
+Time left 149.448959588
+[32mPASSED[0m Test [1;33mtest50-ops[0m. You won: 1
+Time left 148.741748661
+[32mPASSED[0m Test [1;33mtest25-rot[0m. You won: 1
+Time left 148.189839089
+[32mPASSED[0m Test [1;33mtest40-mul[0m. You won: 1
+Time left 147.636041591
+[32mPASSED[0m Test [1;33mtest20-rot[0m. You won: 1
+Time left 147.083032392
+[32mPASSED[0m Test [1;33mtest86-factorial[0m. You won: 1
+Time left 146.512740482
+[32mPASSED[0m Test [1;33mtest24-rot[0m. You won: 1
+Time left 145.930103573
+[31mFAILED[0m Test [1;33mtest04-input[0m. You failed to win: 1
+Timeout .752686391/0.75
+Time left 145.177417182
+[31mFAILED[0m Test [1;33mtest77-pythagoras[0m. You failed to win: 1
+Timeout .752942212/0.75
+Time left 144.424474970
+[31mFAILED[0m Test [1;33mtest27-rot[0m. You failed to win: 1
+Timeout .752968830/0.75
+Time left 143.671506140
+[31mFAILED[0m Test [1;33mtest69-loop[0m. You failed to win: 1
+Timeout .753064491/0.75
+Time left 142.918441649
+[31mFAILED[0m Test [1;33mtest66-exec[0m. You failed to win: 1
+Timeout .753076170/0.75
+Time left 142.165365479
+[31mFAILED[0m Test [1;33mtest23-rot[0m. You failed to win: 1
+Timeout .753018564/0.75
+Time left 141.412346915
+[31mFAILED[0m Test [1;33mtest83-sympythagorean[0m. You failed to win: 1
+Timeout .752923970/0.75
+Time left 140.659422945
+[32mPASSED[0m Test [1;33mtest18-dup[0m. You won: 1
+Time left 139.917045300
+[32mPASSED[0m Test [1;33mtest37-mul[0m. You won: 1
+Time left 139.287825713
+[32mPASSED[0m Test [1;33mtest57-ops[0m. You won: 1
+Time left 138.712621602
+[32mPASSED[0m Test [1;33mtest80-sympythagorean[0m. You won: 1
+Time left 138.132821170
+[32mPASSED[0m Test [1;33mtest07-nop[0m. You won: 1
+Time left 137.540673128
+[32mPASSED[0m Test [1;33mtest34-add[0m. You won: 1
+Time left 136.948013976
+[32mPASSED[0m Test [1;33mtest30-rot[0m. You won: 1
+Time left 136.362575497
+[32mPASSED[0m Test [1;33mtest64-exec[0m. You won: 1
+Time left 135.766026694
+[32mPASSED[0m Test [1;33mtest72-loop[0m. You won: 1
+Time left 135.144334993
+[32mPASSED[0m Test [1;33mtest47-neg[0m. You won: 1
+Time left 134.556208817
+[32mPASSED[0m Test [1;33mtest38-mul[0m. You won: 1
+Time left 133.952319818
+[32mPASSED[0m Test [1;33mtest93-pow[0m. You won: 1
+Time left 133.360562323
+[32mPASSED[0m Test [1;33mtest45-neg[0m. You won: 1
+Time left 132.762905303
+[32mPASSED[0m Test [1;33mtest94-pow[0m. You won: 1
+Time left 132.123306763
+[32mPASSED[0m Test [1;33mtest14-swap[0m. You won: 1
+Time left 131.468146750
+[32mPASSED[0m Test [1;33mtest13-swap[0m. You won: 1
+Time left 130.867474631
+[32mPASSED[0m Test [1;33mtest59-exec[0m. You won: 1
+Time left 130.272814344
+[32mPASSED[0m Test [1;33mtest21-rot[0m. You won: 1
+Time left 129.650739567
+[32mPASSED[0m Test [1;33mtest87-factorialseq[0m. You won: 1
+Time left 129.043094499
+[31mFAILED[0m Test [1;33mtest17-dup[0m. You failed to win: 1
+Timeout .754897674/0.75
+Time left 128.288196825
+[31mFAILED[0m Test [1;33mtest33-add[0m. You failed to win: 1
+Timeout .754879424/0.75
+Time left 127.533317401
+[31mFAILED[0m Test [1;33mtest36-mul[0m. You failed to win: 1
+Timeout .753337050/0.75
+Time left 126.779980351
+[31mFAILED[0m Test [1;33mtest79-pythagoras[0m. You failed to win: 1
+Timeout .753033461/0.75
+Time left 126.026946890
+[31mFAILED[0m Test [1;33mtest81-sympythagorean[0m. You failed to win: 1
+Timeout .752516593/0.75
+Time left 125.274430297
+[32mPASSED[0m Test [1;33mtest65-exec[0m. You won: 1
+Time left 124.662473259
+[32mPASSED[0m Test [1;33mtest44-neg[0m. You won: 1
+Time left 124.086086100
+[31mFAILED[0m Test [1;33mtest11-swap[0m. You failed to win: 1
+Timeout .755175231/0.75
+Time left 123.330910869
+[31mFAILED[0m Test [1;33mtest51-ops[0m. You failed to win: 1
+Timeout .755173410/0.75
+Time left 122.575737459
+[31mFAILED[0m Test [1;33mtest46-neg[0m. You failed to win: 1
+Timeout .753267002/0.75
+Time left 121.822470457
+[31mFAILED[0m Test [1;33mtest92-pow[0m. You failed to win: 1
+Timeout .753248812/0.75
+Time left 121.069221645
+[31mFAILED[0m Test [1;33mtest03-input[0m. You failed to win: 1
+Timeout .755932574/0.75
+Time left 120.313289071
+[32mPASSED[0m Test [1;33mtest43-neg[0m. You won: 1
+Time left 119.675657103
+[32mPASSED[0m Test [1;33mtest35-add[0m. You won: 1
+Time left 119.087583407
+[31mFAILED[0m Test [1;33mtest89-fibo[0m. You failed to win: 1
+Timeout .756844411/0.75
+Time left 118.330738996
+[31mFAILED[0m Test [1;33mtest84-sympythagorean[0m. You failed to win: 1
+Timeout .755371843/0.75
+Time left 117.575367153
+[31mFAILED[0m Test [1;33mtest52-ops[0m. You failed to win: 1
+Timeout .753045650/0.75
+Time left 116.822321503
+[31mFAILED[0m Test [1;33mtest73-loop[0m. You failed to win: 1
+Timeout .759874500/0.75
+Time left 116.062447003
+[32mPASSED[0m Test [1;33mtest82-sympythagorean[0m. You won: 1
+Time left 115.456091341
+[32mPASSED[0m Test [1;33mtest09-pop[0m. You won: 1
+Time left 114.780697707
+[32mPASSED[0m Test [1;33mtest42-neg[0m. You won: 1
+Time left 114.192311096
+[32mPASSED[0m Test [1;33mtest68-exec[0m. You won: 1
+Time left 113.594587072
+[31mFAILED[0m Test [1;33mtest15-dup[0m. You failed to win: 1
+Timeout .755800809/0.75
+Time left 112.838786263
+[31mFAILED[0m Test [1;33mtest06-nop[0m. You failed to win: 1
+Timeout .755277720/0.75
+Time left 112.083508543
+[31mFAILED[0m Test [1;33mtest54-ops[0m. You failed to win: 1
+Timeout .753054429/0.75
+Time left 111.330454114
+[31mFAILED[0m Test [1;33mtest67-exec[0m. You failed to win: 1
+Timeout .752958384/0.75
+Time left 110.577495730
+[31mFAILED[0m Test [1;33mtest10-pop[0m. You failed to win: 1
+Timeout .752830935/0.75
+Time left 109.824664795
+[32mPASSED[0m Test [1;33mtest22-rot[0m. You won: 1
+Time left 109.190867533
+[32mPASSED[0m Test [1;33mtest41-neg[0m. You won: 1
+Time left 108.569119957
+[31mFAILED[0m Test [1;33mtest88-factorialinvseq[0m. You failed to win: 1
+Timeout .754710608/0.75
+Time left 107.814409349
+[31mFAILED[0m Test [1;33mtest60-exec[0m. You failed to win: 1
+Timeout .755002310/0.75
+Time left 107.059407039
+[31mFAILED[0m Test [1;33mtest29-rot[0m. You failed to win: 1
+Timeout .752970738/0.75
+Time left 106.306436301
+[31mFAILED[0m Test [1;33mtest01-output[0m. You failed to win: 1
+Timeout .752527818/0.75
+Time left 105.553908483
+[32mPASSED[0m Test [1;33mtest90-fiboseq[0m. You won: 1
+Time left 104.927869678
+[32mPASSED[0m Test [1;33mtest71-loop[0m. You won: 1
+Time left 104.257046765
+[32mPASSED[0m Test [1;33mtest74-loop[0m. You won: 1
+Time left 103.535283324
+[31mFAILED[0m Test [1;33mtest28-rot[0m. You failed to win: 1
+Timeout .755295804/0.75
+Time left 102.779987520
+[31mFAILED[0m Test [1;33mtest76-pythagoras[0m. You failed to win: 1
+Timeout .755049390/0.75
+Time left 102.024938130
+[31mFAILED[0m Test [1;33mtest02-input[0m. You failed to win: 1
+Timeout .753062204/0.75
+Time left 101.271875926
+[32mPASSED[0m Test [1;33mtest00-output[0m. You won: 1
+Time left 100.562254556
+[32mPASSED[0m Test [1;33mtest08-pop[0m. You won: 1
+Time left 99.937406995
+[32mPASSED[0m Test [1;33mtest49-ops[0m. You won: 1
+Time left 99.354474349
+[32mPASSED[0m Test [1;33mtest91-fiboinvseq[0m. You won: 1
+Time left 98.768693814
+[32mPASSED[0m Test [1;33mtest85-factorial[0m. You won: 1
+Time left 98.188074350
+[32mPASSED[0m Test [1;33mtest12-swap[0m. You won: 1
+Time left 97.590840694
+[32mPASSED[0m Test [1;33mtest16-dup[0m. You won: 1
+Time left 97.009477277
+[32mPASSED[0m Test [1;33mtest62-exec[0m. You won: 1
+Time left 96.316871799
+[31mFAILED[0m Test [1;33mtest48-neg[0m. You failed to win: 1
+Timeout .763544389/0.75
+Time left 95.553327410
+[31mFAILED[0m Test [1;33mtest26-rot[0m. You failed to win: 1
+Timeout .755028611/0.75
+Time left 94.798298799
+[31mFAILED[0m Test [1;33mtest32-add[0m. You failed to win: 1
+Timeout .753174504/0.75
+Time left 94.045124295
+[31mFAILED[0m Test [1;33mtest19-dup[0m. You failed to win: 1
+Timeout .753174131/0.75
+Time left 93.291950164
+[31mFAILED[0m Test [1;33mtest05-nop[0m. You failed to win: 1
+Timeout .753126700/0.75
+Time left 92.538823464
+[31mFAILED[0m Test [1;33mtest39-mul[0m. You failed to win: 1
+Timeout .753736319/0.75
+Time left 91.785087145
+[32mPASSED[0m Test [1;33mtest53-ops[0m. You won: 1
+Time left 91.190481147
+[31mFAILED[0m Test [1;33mtest58-ops[0m. You failed to win: 1
+Timeout .754973815/0.75
+Time left 90.435507332
+[31mFAILED[0m Test [1;33mtest78-pythagoras[0m. You failed to win: 1
+Timeout .755468659/0.75
+Time left 89.680038673
+[31mFAILED[0m Test [1;33mtest75-pythagoras[0m. You failed to win: 1
+Timeout .753051376/0.75
+Time left 88.926987297
+[31mFAILED[0m Test [1;33mtest70-loop[0m. You failed to win: 1
+Timeout .753064889/0.75
+Time left 88.173922408
+[32mPASSED[0m Test [1;33mtest63-exec[0m. You won: 1
+Time left 87.502563058
+[32mPASSED[0m Test [1;33mtest61-exec[0m. You won: 1
+Time left 86.895113684
+[32mPASSED[0m Test [1;33mtest31-add[0m. You won: 1
+Time left 86.298740033
+[31mFAILED[0m Test [1;33mtest55-ops[0m. You failed to win: 1
+Timeout .756156577/0.75
+Time left 85.542583456
+[31mFAILED[0m Test [1;33mbigtest07-max[0m. You failed to win: 3
+Timeout .754994042/0.75
+Time left 84.787589414
+[31mFAILED[0m Test [1;33mbigtest14-covid[0m. You failed to win: 3
+Timeout .753112316/0.75
+Time left 84.034477098
+[31mFAILED[0m Test [1;33mbigtest10-euclid[0m. You failed to win: 3
+Timeout .753332786/0.75
+Time left 83.281144312
+[31mFAILED[0m Test [1;33mbigtest09-max[0m. You failed to win: 3
+Timeout .754229317/0.75
+Time left 82.526914995
+[32mPASSED[0m Test [1;33mbigtest12-euclid[0m. You won: 3
+Time left 81.862246611
+[32mPASSED[0m Test [1;33mbigtest11-euclid[0m. You won: 3
+Time left 81.187804480
+[32mPASSED[0m Test [1;33mbigtest04-abs[0m. You won: 3
+Time left 80.569146333
+[31mFAILED[0m Test [1;33mbigtest08-max[0m. You failed to win: 3
+Timeout .754992308/0.75
+Time left 79.814154025
+[31mFAILED[0m Test [1;33mbigtest02-tetration[0m. You failed to win: 3
+Timeout .755100150/0.75
+Time left 79.059053875
+[31mFAILED[0m Test [1;33mbigtest13-stress[0m. You failed to win: 3
+Timeout .753061313/0.75
+Time left 78.305992562
+[31mFAILED[0m Test [1;33mbigtest00-tetration[0m. You failed to win: 3
+Timeout .753062230/0.75
+Time left 77.552930332
+[31mFAILED[0m Test [1;33mbigtest06-max[0m. You failed to win: 3
+Timeout .753416713/0.75
+Time left 76.799513619
+[31mFAILED[0m Test [1;33mbigtest01-tetration[0m. You failed to win: 3
+Timeout .753020956/0.75
+Time left 76.046492663
+[31mFAILED[0m Test [1;33mbigtest03-abs[0m. You failed to win: 3
+Timeout .755540990/0.75
+Time left 75.290951673
+[31mFAILED[0m Test [1;33mbigtest05-abs[0m. You failed to win: 3
+Timeout .764222752/0.75
+Time left 74.526728921
+[31mFAILED[0m Test [1;33mextra03-swap[0m. You failed to win: 1
+Timeout .756426981/0.75
+Time left 73.770301940
+[31mFAILED[0m Test [1;33mextra07-rot[0m. You failed to win: 1
+Timeout .754045401/0.75
+Time left 73.016256539
+[31mFAILED[0m Test [1;33mextra10-add[0m. You failed to win: 1
+Timeout .754406974/0.75
+Time left 72.261849565
+[31mFAILED[0m Test [1;33mextra06-rot[0m. You failed to win: 1
+Timeout .753465780/0.75
+Time left 71.508383785
+[31mFAILED[0m Test [1;33mextra04-dup[0m. You failed to win: 1
+Timeout .753279984/0.75
+Time left 70.755103801
+[31mFAILED[0m Test [1;33mextra15-neg[0m. You failed to win: 1
+Timeout .752920531/0.75
+Time left 70.002183270
+[31mFAILED[0m Test [1;33mextra18-ops[0m. You failed to win: 1
+Timeout .752297821/0.75
+Time left 69.249885449
+[31mFAILED[0m Test [1;33mextra02-pop[0m. You failed to win: 1
+Timeout .752663643/0.75
+Time left 68.497221806
+[31mFAILED[0m Test [1;33mextra16-neg[0m. You failed to win: 1
+Timeout .760086947/0.75
+Time left 67.737134859
+[31mFAILED[0m Test [1;33mextra01-input[0m. You failed to win: 1
+Timeout .752427617/0.75
+Time left 66.984707242
+[31mFAILED[0m Test [1;33mextra12-mul[0m. You failed to win: 1
+Timeout .756028482/0.75
+Time left 66.228678760
+[31mFAILED[0m Test [1;33mextra08-rot[0m. You failed to win: 1
+Timeout .756251749/0.75
+Time left 65.472427011
+[31mFAILED[0m Test [1;33mextra19-loop[0m. You failed to win: 1
+Timeout .753125667/0.75
+Time left 64.719301344
+[31mFAILED[0m Test [1;33mextra11-mul[0m. You failed to win: 1
+Timeout .753373360/0.75
+Time left 63.965927984
+[31mFAILED[0m Test [1;33mextra14-mul[0m. You failed to win: 1
+Timeout .753242818/0.75
+Time left 63.212685166
+[31mFAILED[0m Test [1;33mextra17-ops[0m. You failed to win: 1
+Timeout .760577088/0.75
+Time left 62.452108078
+[31mFAILED[0m Test [1;33mextra13-mul[0m. You failed to win: 1
+Timeout .754029116/0.75
+Time left 61.698078962
+[31mFAILED[0m Test [1;33mextra05-rot[0m. You failed to win: 1
+Timeout .753397483/0.75
+Time left 60.944681479
+[31mFAILED[0m Test [1;33mextra09-add[0m. You failed to win: 1
+Timeout .755723884/0.75
+Time left 60.188957595
+[31mFAILED[0m Test [1;33mextra00-input[0m. You failed to win: 1
+Timeout .756676657/0.75
+Time left 59.432280938
+[31mFAILED[0m Test [1;33mbigextra00-tetration[0m. You failed to win: 3
+Timeout .753234521/0.75
+Time left 58.679046417
+[31mFAILED[0m Test [1;33mbigextra01-factorialseq[0m. You failed to win: 3
+Timeout .753101853/0.75
+Time left 57.925944564
+[31mFAILED[0m Test [1;33mbigextra03-pow[0m. You failed to win: 3
+Timeout .753066376/0.75
+Time left 57.172878188
+[31mFAILED[0m Test [1;33mbigextra04-expseq[0m. You failed to win: 3
+Timeout .756189201/0.75
+Time left 56.416688987
+[31mFAILED[0m Test [1;33mbigextra02-fiboseq[0m. You failed to win: 3
+Timeout .752979161/0.75
+Time left 55.663709826
+[31mFAILED[0m Test [1;33merror03-blocks[0m. You failed to win: 1
+Timeout .756281056/0.75
+Time left 54.907428770
+[31mFAILED[0m Test [1;33merror02-blocks[0m. You failed to win: 1
+Timeout .759572310/0.75
+Time left 54.147856460
+[31mFAILED[0m Test [1;33merror04-loop[0m. You failed to win: 1
+Timeout .754312810/0.75
+Time left 53.393543650
+[31mFAILED[0m Test [1;33merror00-blocks[0m. You failed to win: 1
+Timeout .753337104/0.75
+Time left 52.640206546
+[31mFAILED[0m Test [1;33merror01-blocks[0m. You failed to win: 1
+Timeout .753403146/0.75
+Time left 51.886803400
+[31mFAILED[0m Test [1;33merror05-loop[0m. You failed to win: 1
+Timeout .753556886/0.75
+Time left 51.133246514
+[31mFAILED[0m Test [1;33mexception05-plus[0m. You failed to win: 1
+Timeout .753317523/0.75
+Time left 50.379928991
+[31mFAILED[0m Test [1;33mexception13-exec[0m. You failed to win: 1
+Timeout .753917345/0.75
+Time left 49.626011646
+[31mFAILED[0m Test [1;33mexception09-neg[0m. You failed to win: 1
+Timeout .755467090/0.75
+Time left 48.870544556
+[31mFAILED[0m Test [1;33mexception08-mul[0m. You failed to win: 1
+Timeout .755899414/0.75
+Time left 48.114645142
+[31mFAILED[0m Test [1;33mexception11-input[0m. You failed to win: 1
+Timeout .753374097/0.75
+Time left 47.361271045
+[31mFAILED[0m Test [1;33mexception12-exec[0m. You failed to win: 1
+Timeout .753505597/0.75
+Time left 46.607765448
+[31mFAILED[0m Test [1;33mexception03-swap[0m. You failed to win: 1
+Timeout .753380470/0.75
+Time left 45.854384978
+[31mFAILED[0m Test [1;33mexception04-dup[0m. You failed to win: 1
+Timeout .754010486/0.75
+Time left 45.100374492
+[31mFAILED[0m Test [1;33mexception07-output[0m. You failed to win: 1
+Timeout .753064502/0.75
+Time left 44.347309990
+[31mFAILED[0m Test [1;33mexception02-swap[0m. You failed to win: 1
+Timeout .753272560/0.75
+Time left 43.594037430
+[31mFAILED[0m Test [1;33mexception00-rot[0m. You failed to win: 1
+Timeout .756179830/0.75
+Time left 42.837857600
+[31mFAILED[0m Test [1;33mexception06-loop[0m. You failed to win: 1
+Timeout .755280251/0.75
+Time left 42.082577349
+[31mFAILED[0m Test [1;33mexception10-pop[0m. You failed to win: 1
+Timeout .753287104/0.75
+Time left 41.329290245
+[31mFAILED[0m Test [1;33mexception01-rrot[0m. You failed to win: 1
+Timeout .753096046/0.75
+Time left 40.576194199
+[31mFAILED[0m Test [1;33mexceptionextra02-exec[0m. You failed to win: 1
+Timeout .753864298/0.75
+Time left 39.822329901
+[31mFAILED[0m Test [1;33mexceptionextra03-exec[0m. You failed to win: 1
+Timeout .753451074/0.75
+Time left 39.068878827
+[31mFAILED[0m Test [1;33mexceptionextra00-input[0m. You failed to win: 1
+Timeout .755792035/0.75
+Time left 38.313086792
+[31mFAILED[0m Test [1;33mexceptionextra04-exec[0m. You failed to win: 1
+Timeout .755244567/0.75
+Time left 37.557842225
+[31mFAILED[0m Test [1;33mexceptionextra01-exec[0m. You failed to win: 1
+Timeout .753474591/0.75
+Time left 36.804367634
+[31mFAILED[0m Test [1;33mbonus12-loop[0m. You failed to win: 1
+Timeout .753310216/0.75
+Time left 36.051057418
+[31mFAILED[0m Test [1;33mbonus02-pop[0m. You failed to win: 1
+Timeout .753208910/0.75
+Time left 35.297848508
+[31mFAILED[0m Test [1;33mbonus01-input[0m. You failed to win: 1
+Timeout .753306840/0.75
+Time left 34.544541668
+[31mFAILED[0m Test [1;33mbonus03-swap[0m. You failed to win: 1
+Timeout .752645543/0.75
+Time left 33.791896125
+[31mFAILED[0m Test [1;33mbonus09-mul[0m. You failed to win: 1
+Timeout .752141539/0.75
+Time left 33.039754586
+[31mFAILED[0m Test [1;33mbonus14-pythagoras[0m. You failed to win: 1
+Timeout .756765233/0.75
+Time left 32.282989353
+[31mFAILED[0m Test [1;33mbonus06-add[0m. You failed to win: 1
+Timeout .755254008/0.75
+Time left 31.527735345
+[31mFAILED[0m Test [1;33mbonus11-loop[0m. You failed to win: 1
+Timeout .753407302/0.75
+Time left 30.774328043
+[31mFAILED[0m Test [1;33mbonus15-sympythagorean[0m. You failed to win: 1
+Timeout .753857459/0.75
+Time left 30.020470584
+[31mFAILED[0m Test [1;33mbonus13-loop[0m. You failed to win: 1
+Timeout .753217535/0.75
+Time left 29.267253049
+[31mFAILED[0m Test [1;33mbonus05-rot[0m. You failed to win: 1
+Timeout .753378256/0.75
+Time left 28.513874793
+[31mFAILED[0m Test [1;33mbonus04-dup[0m. You failed to win: 1
+Timeout .756412348/0.75
+Time left 27.757462445
+[31mFAILED[0m Test [1;33mbonus00-input[0m. You failed to win: 1
+Timeout .755769424/0.75
+Time left 27.001693021
+[31mFAILED[0m Test [1;33mbonus08-mul[0m. You failed to win: 1
+Timeout .753822153/0.75
+Time left 26.247870868
+[31mFAILED[0m Test [1;33mbonus10-neg[0m. You failed to win: 1
+Timeout .753385498/0.75
+Time left 25.494485370
+[31mFAILED[0m Test [1;33mbonus07-add[0m. You failed to win: 1
+Timeout .753230949/0.75
+Time left 24.741254421
+[31mFAILED[0m Test [1;33mbigbonus05-abs[0m. You failed to win: 3
+Timeout .753484523/0.75
+Time left 23.987769898
+[31mFAILED[0m Test [1;33mbigbonus04-tetration[0m. You failed to win: 3
+Timeout .752964229/0.75
+Time left 23.234805669
+[31mFAILED[0m Test [1;33mbigbonus10-euclid[0m. You failed to win: 3
+Timeout .755169517/0.75
+Time left 22.479636152
+[31mFAILED[0m Test [1;33mbigbonus01-fiboinvseq[0m. You failed to win: 3
+Timeout .755267511/0.75
+Time left 21.724368641
+[31mFAILED[0m Test [1;33mbigbonus03-tetration[0m. You failed to win: 3
+Timeout .753407817/0.75
+Time left 20.970960824
+[31mFAILED[0m Test [1;33mbigbonus08-max[0m. You failed to win: 3
+Timeout .753272683/0.75
+Time left 20.217688141
+[31mFAILED[0m Test [1;33mbigbonus06-abs[0m. You failed to win: 3
+Timeout .755274958/0.75
+Time left 19.462413183
+[31mFAILED[0m Test [1;33mbigbonus02-pow[0m. You failed to win: 3
+Timeout .753404581/0.75
+Time left 18.709008602
+[31mFAILED[0m Test [1;33mbigbonus07-max[0m. You failed to win: 3
+Timeout .757041289/0.75
+Time left 17.951967313
+[31mFAILED[0m Test [1;33mbigbonus09-euclid[0m. You failed to win: 3
+Timeout .756293601/0.75
+Time left 17.195673712
+[31mFAILED[0m Test [1;33mbigbonus00-factorialinvseq[0m. You failed to win: 3
+Timeout .754278498/0.75
+Time left 16.441395214
+[31mFAILED[0m Test [1;33mexceptionbonus02-exec[0m. You failed to win: 1
+Timeout .753493440/0.75
+Time left 15.687901774
+[31mFAILED[0m Test [1;33mexceptionbonus04-exec[0m. You failed to win: 1
+Timeout .753553646/0.75
+Time left 14.934348128
+[31mFAILED[0m Test [1;33mexceptionbonus03-exec[0m. You failed to win: 1
+Timeout .754340082/0.75
+Time left 14.180008046
+[31mFAILED[0m Test [1;33mexceptionbonus05-exec[0m. You failed to win: 1
+Timeout .752528379/0.75
+Time left 13.427479667
+[31mFAILED[0m Test [1;33mexceptionbonus00-input[0m. You failed to win: 1
+Timeout .756374889/0.75
+Time left 12.671104778
+[31mFAILED[0m Test [1;33mexceptionbonus06-exec[0m. You failed to win: 1
+Timeout .757312697/0.75
+Time left 11.913792081
+[31mFAILED[0m Test [1;33mexceptionbonus01-exec[0m. You failed to win: 1
+Timeout .755398110/0.75
+Time left 11.158393971
+Score: 60 out of 256

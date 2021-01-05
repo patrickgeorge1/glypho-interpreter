@@ -1,5 +1,6 @@
 package com.company;
 
+import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
@@ -78,9 +79,35 @@ public class CodeTranslater {
         }
         String translation = instructions.getOrDefault(matchingKey, "none");
         if (translation.equals("none"))
-            throw new Exception("invalid instruction");  // TODO
+            throw new Exception("invalid instruction");
 
         //System.out.println(instruction + " ---" + matchingKey + "---> " + instructions.get(matchingKey));
+        return instructions.get(matchingKey);
+    }
+
+    /**
+     * convert 4 BigInts in corresponding instruction if possible
+     * @return short form
+     */
+    public static String convertInstruction(BigInteger[] numbers) throws Exception {
+        HashMap<BigInteger, Integer> positions = new HashMap<>();
+        int next_position = 0;
+
+        Integer power = 64;
+        Integer matchingKey = 0;
+
+        for (BigInteger n : numbers) {
+            if (!positions.containsKey(n)) {
+                positions.put(n, next_position);
+                next_position++;
+            }
+            matchingKey += power * positions.get(n);
+            power /= 4;
+        }
+        String translation = instructions.getOrDefault(matchingKey, "none");
+        if (translation.equals("none"))
+            throw new Exception("invalid instruction");
+
         return instructions.get(matchingKey);
     }
 
