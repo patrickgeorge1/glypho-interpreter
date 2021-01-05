@@ -37,7 +37,7 @@ public class CodeTranslater {
      */
     public String translate() throws Exception {
         if (source_code.length() % 4 != 0)
-            throw new Exception("Exception: 0" + " raw code not % 4"); // TODO
+            throw new Exception("Error: " + source_code.length() / 4); // TODO
         Stack<Pair> braces = new Stack<>();
 
         StringBuilder translated_code = new StringBuilder();
