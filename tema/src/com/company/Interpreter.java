@@ -49,16 +49,28 @@ public class Interpreter {
                 break;
 
             case 'i':
-                BigInteger input = new BigInteger(scanner.nextLine());
-                memoryStack.addLast(input);
+                String input_string = scanner.nextLine();
+
+                // take care of negative numbers
+                String sign = "+1";
+                if (input_string.charAt(0) == '-') {
+                    input_string = input_string.substring(1);
+                    sign = "-1";
+                }
+
+                if (!input_string.chars().allMatch(Character :: isDigit)) throw new Exception("Exception:" + line);
+                BigInteger input = new BigInteger(input_string);
+                memoryStack.addLast(input.multiply(new BigInteger(sign)));
                 break;
 
             case '>':
+                if (memoryStack.size() < 1) throw new Exception("Exception:" + line);
                 BigInteger topStack = memoryStack.removeLast();
                 memoryStack.addFirst(topStack);
                 break;
 
             case '\\':
+                if (memoryStack.size() < 2) throw new Exception("Exception:" + line);
                 BigInteger firstNumber = memoryStack.removeLast();
                 BigInteger secondNumber = memoryStack.removeLast();
                 memoryStack.addLast(firstNumber);
@@ -70,22 +82,26 @@ public class Interpreter {
                 break;
 
             case '<':
+                if (memoryStack.size() < 1) throw new Exception("Exception:" + line);
                 BigInteger bottomStack = memoryStack.removeFirst();
                 memoryStack.addLast(bottomStack);
                 break;
 
             case 'd':
+                if (memoryStack.size() < 1) throw new Exception("Exception:" + line);
                 BigInteger topStackNumber = memoryStack.peekLast();
                 memoryStack.addLast(topStackNumber);
                 break;
 
             case '+':
+                if (memoryStack.size() < 2) throw new Exception("Exception:" + line);
                 BigInteger sumOperand1 = memoryStack.removeLast();
                 BigInteger sumOperand2 = memoryStack.removeLast();
                 memoryStack.addLast(sumOperand1.add(sumOperand2));
                 break;
 
             case '[':
+                if (memoryStack.size() < 1) throw new Exception("Exception:" + line);
                 if (skippedBrackets != 0 || memoryStack.peekLast().equals(new BigInteger("0"))) {
                     skippedBrackets++;
                     return line + 1;
@@ -94,17 +110,20 @@ public class Interpreter {
                 break;
 
             case 'o':
+                if (memoryStack.size() < 1) throw new Exception("Exception:" + line);
                 BigInteger output = memoryStack.removeLast();
                 System.out.println(output);
                 break;
 
             case '*':
+                if (memoryStack.size() < 2) throw new Exception("Exception:" + line);
                 BigInteger mulOperand1 = memoryStack.removeLast();
                 BigInteger mulOperand2 = memoryStack.removeLast();
                 memoryStack.addLast(mulOperand1.multiply(mulOperand2));
                 break;
 
             case 'e':
+                if (memoryStack.size() < 4) throw new Exception("Exception:" + line);
                 BigInteger [] numbers = {
                         memoryStack.removeLast(), memoryStack.removeLast(),
                         memoryStack.removeLast(), memoryStack.removeLast()
@@ -114,11 +133,13 @@ public class Interpreter {
                 return line;
 
             case '-':
+                if (memoryStack.size() < 1) throw new Exception("Exception:" + line);
                 BigInteger toNegate = memoryStack.removeLast();
                 memoryStack.addLast(toNegate.multiply(new BigInteger("-1")));
                 break;
 
             case '!':
+                if (memoryStack.size() < 1) throw new Exception("Exception:" + line);
                 memoryStack.removeLast();
                 break;
 
