@@ -1,2 +1,2 @@
 Exception:42
-make: *** [Makefile:5: run] Error 254
+make: *** [Makefile:34: run] Error 254
